@@ -9,7 +9,7 @@ $ gcloud functions deploy notify_to_slack \
     --entry-point NotifyToSlack \
     --runtime go111 \
     --set-env-vars 'WEBHOOK_URL=...' \
-    --trigger-http \
+    --trigger-bucket <bucket> \
     --project <your_gcp_project_id> \
     --region asia-northeast1
 ```
